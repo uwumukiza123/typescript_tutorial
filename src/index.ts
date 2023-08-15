@@ -37,14 +37,33 @@ console.log(mySize)
 // retire: we can use it to specify how many parameters, what type of the return value,...
 
 
-let employee: {
+
+
+// ADVANCED DATA TYPES
+// 1. type aliases
+// 2. unions ad intersections to combine types
+//  3. type narrowing
+// 4. Nullable types
+// 5. the unkown types
+// 6. the never types
+
+
+// TYPE ALIASES
+// By using type aliases we can define a custom type
+// the benefit of using type alias is reuse the shape of the object in multiple places
+
+type Employee = {
     readonly id:number, 
-    name?: string,
+    name: string,
     retire: (date: Date) => void
+    
+}
+
+let employee: Employee{
 } = {
     id: 1,
+    name: 'Kevin',
     retire: (date: Date) => {
         console.log(date)
     }
 };
-employee.name = 'henry';
