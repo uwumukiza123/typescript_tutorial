@@ -1,7 +1,34 @@
+//  TYPESCRIPT have annotations by telling the data type for a variable
+// eg:
+    let age: number = 12;
+    let myName: string = 'Banny'
+// is typed arrays with predefined length and types of each index
+let tupple: [string, boolean, number] = ['hello', true, 12];
 
+
+// ENUMS: a special class which represents a group of constants(unchangeable variables)
+// and every name to enum becomes a data type
+    // eg:
+    // enum Size {small =1, medium, large};
+    // let mySize: Size = Size.medium;
 // const small = 1;
 // const medium = 2;
 // const large = 3;
 
 // pascal case
-enum Size {small ='s', medium = 'm', large = 'l'}
+const enum Size {small =1, medium, large};
+let mySize: Size = Size.large;
+console.log(mySize)
+
+// FUNCTIONS
+// void: means a function does not return a value
+    function calculateTax(income: number, taxYear?: number): number {
+       if((taxYear || 2022) < 2022) {
+                 return income * 1.2;
+            return income * 1.3;
+       }
+        
+    }
+    calculateTax(1000)
+
+

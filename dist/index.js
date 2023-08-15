@@ -1,7 +1,6 @@
 "use strict";
-let age = 20;
-if (age < 50) {
-    age += 10;
-}
+let tupple = ['hello', true, 12];
+;
+let mySize = 3;
+console.log(mySize);
 //# sourceMappingURL=index.js.map
-
