@@ -67,3 +67,18 @@ let employee: Employee{
         console.log(date)
     }
 };
+
+// 2. UNION TYPES
+//  we can give a variable or a function parameter more than one time
+
+function kgToLbs(weight: number | string): number {
+    // narrowing(narrow down the data types)
+    if(typeof weight === 'number')
+        return weight * 2.2;
+
+    else
+        return parseInt(weight) * 2.2;
+};
+
+kgToLbs(10);
+kgToLbs('10kg')
