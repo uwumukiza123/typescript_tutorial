@@ -31,4 +31,20 @@ console.log(mySize)
     }
     calculateTax(1000)
 
+// OBJECTS
+// optional(?)
+// we can make an object's keys a readonly
+// retire: we can use it to specify how many parameters, what type of the return value,...
 
+
+let employee: {
+    readonly id:number, 
+    name?: string,
+    retire: (date: Date) => void
+} = {
+    id: 1,
+    retire: (date: Date) => {
+        console.log(date)
+    }
+};
+employee.name = 'henry';
