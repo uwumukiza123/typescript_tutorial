@@ -120,4 +120,10 @@ stringArr.push('hi')
 guitars.unshift();
 
 // tupple
-let myTupple: [string, number, boolean] = ['dave', 42, true]
+let myTupple: [string, number, boolean] = ['dave', 42, true];
+let mixed = ['john', false, 1];
+
+mixed = myTupple;
+
+// since tupple must have three elements, but mixed might have three, more or less elements
+//  so myTupple can not be assigned to mixed but mixed can be assigned to myTupple

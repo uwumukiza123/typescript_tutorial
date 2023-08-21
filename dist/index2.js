@@ -27,4 +27,6 @@ stringArr[0] = 'john';
 stringArr.push('hi');
 guitars.unshift();
 let myTupple = ['dave', 42, true];
+let mixed = ['john', false, 1];
+mixed = myTupple;
 //# sourceMappingURL=index2.js.map
