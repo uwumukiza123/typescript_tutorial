@@ -107,3 +107,17 @@ users.forEach(logPerson);
 
 // In case you are stuck:
 // https://www.typescriptlang.org/docs/handbook/2/objects.html
+
+let stringArr = ['one', 'two', 'hey'];
+
+let guitars = ['strat', 'les paul', 5150];
+
+let mixedData = ['EVH', 1994, true];
+
+stringArr[0] = 'john';
+stringArr.push('hi')
+
+guitars.unshift();
+
+// tupple
+let myTupple: [string, number, boolean] = ['dave', 42, true]

@@ -1,7 +1,7 @@
 
 //3. INTERSECTION TYPES
 //  -> the union types is represented by one or symbol (|)
-//  while the intersectio type is represented by one ad symbol(&), ampersand which is sometimes impossible because a value can not be string and number at the same time
+//  while the intersection type is represented by one ad symbol(&), ampersand which is sometimes impossible because a value can not be string and number at the same time
 
 
 let weight: number & string
